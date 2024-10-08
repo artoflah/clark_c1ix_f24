@@ -1,0 +1,29 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-image: url('IMG_8913.jpeg');
+    background-size: contain; 
+    color: #2f2f2f; 
+    text-align: center; 
+}
+
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+a {
+    display: block;
+    color: #ff00ae; 
+    text-decoration: none; 
+    margin: 100px 0;
+    text-align: center;
+}
+
+a:hover {
+    color: #FF69B4;  /* Underline on hover */
+}

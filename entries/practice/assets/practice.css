@@ -1,0 +1,26 @@
+body { 
+    background-color:deeppink;
+}
+
+h1 {
+    font-family:cursive;
+    color:white;
+    font-size: 100px;
+    padding: 100px 50px 100px 50px;
+}
+
+p {
+    color:darkred;
+}
+
+.gold {
+    color:gold;
+}
+
+.shine {
+    font-family:cursive;
+}
+
+#red {
+    color:darkred;
+}
