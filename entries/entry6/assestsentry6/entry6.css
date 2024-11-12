@@ -1,20 +1,19 @@
-/* Reset default styling */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Make the body fill the full height of the screen */
   body {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Divide the screen into three equal columns */
+    grid-template-columns: 1fr 1fr 1fr; 
     width: 100%;
     margin: 0;
   }
   
-  /* Set background images for each grid section */
+
   body::before, body::after, body > div {
     background-size: cover;
     background-position: center;
