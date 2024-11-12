@@ -43,6 +43,9 @@ body {
 
     filter: sepia(20%) contrast(90%) brightness(95%);
     transition: transform 0.3s ease-in-out;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
   }
   
 

@@ -1,12 +1,12 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
     text-align: center;
-}
-label {
+  }
+  
+  label {
     display: inline-block;
     cursor: pointer;
     background-color: #ffeb3b; 
@@ -14,30 +14,38 @@ label {
     padding: 10px 20px;
     border-radius: 5px;
     margin: 5px;
-}
-
-
-.image-container img {
+  }
+  .image-container {
+    display: none;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img {
     max-width: 100%;
-}
-
-
-#QUESTION1:checked + label + input:checked + label + input:checked + label + input:checked + label + input:checked + label + input:checked + label + input:checked + label + input:checked + label + input:checked + label + .image-container {
-    display: inline;
-}
-
-
-.links {
+    width: 500px;
+    height: 600px;
+    transition: transform 0.3s ease-in-out;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .links {
     margin: 20px 0;
-}
-
-.links a {
+  }
+  
+  .links a {
     display: block;
     color: #2f2f2f;
     text-decoration: none;
     margin: 5px 0;
-}
-
-.links a:hover {
-    color: #ff69b4; 
-}
+  }
+  
+  .links a:hover {
+    color: #ff69b4;
+  }
+  
+  

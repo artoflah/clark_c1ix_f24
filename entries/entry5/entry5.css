@@ -1,0 +1,42 @@
+body {
+  font-family: 'ELEGANT  Personal use', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500vh;
+  overflow: hidden;
+}
+
+.color-block {
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.light-beige { background-color: #C0B798; color: #070707; }
+.black { background-color: #070707; color: #C0B798; } 
+.dark-red { background-color: #441C1B; color: #FDF8EC; } 
+.cream { background-color: #FDF8EC; color: #441C1B; } 
+.dark-charcoal { background-color: #2D2F2E; color: #FDF8EC; } 
+
+
+.color-block:hover {
+  transform: scale(1.1);
+}
+
+.color-block:active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.color-block:focus {
+  outline: 3px solid #fff;
+}

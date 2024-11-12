@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Week Three.</title>
-  <link rel="stylesheet" type="text/css" href="assets/assets3.css"> <!-- Link to the CSS file -->
-</head>
+  <link rel="stylesheet" type="text/css" href="assets/assets3.css"> 
 
 <body>
   <form>
@@ -53,5 +52,23 @@
     <a href="/Users/milahclark/Desktop/fall24/interaction/clark_c1ix_f24/entries/entry4/entry4.html">GO NEXT?</a>
   </footer>
 
+  <script>
+    const checkboxes = document.querySelectorAll('.checkbox');
+    const imageContainer = document.querySelector('.image-container');
 
-  <style>
+    function checkAllChecked() {
+      const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+      if (allChecked) {
+        imageContainer.style.display = 'block'; 
+        document.querySelector('.outfit-image').style.transform = 'scale(1.5)'; 
+      } else {
+        imageContainer.style.display = 'none'; 
+        document.querySelector('.outfit-image').style.transform = 'scale(1)'; 
+      }
+    }
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', checkAllChecked);
+    });
+  </script>
+</body>
+</html>
