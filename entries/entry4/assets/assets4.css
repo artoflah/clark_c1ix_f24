@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 20px;
-    font-family: 'Trends', sans-serif;
+    font-family: 'BebasNeue-Regular', sans-serif;
     background-image: url('IMG_8913.jpeg');
     background-size: contain;
     text-align: center; 
+    font-size: 24px;
 }
 
 img {
@@ -15,8 +16,7 @@ img {
 
 a {
     display: block;
-    color: #ff00ae; 
-    text-decoration: none; 
+    color: #ffffff; 
     margin: 100px 0;
     text-align: center;
 }
