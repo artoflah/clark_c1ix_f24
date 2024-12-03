@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'Brigends Expanded';
+  src: url(fonts/Brigends\ Expanded.otf);
+    font-family: 'Tempting';
+  src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY\ copy.ttf);
+}
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Brigends Expanded', sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
@@ -9,7 +15,7 @@ body {
   label {
     display: inline-block;
     cursor: pointer;
-    background-color: #ffeb3b; 
+    background-color: #000000; 
     color: #ff0073; 
     padding: 10px 20px;
     border-radius: 5px;
@@ -31,21 +37,31 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
   
-  .links {
-    margin: 20px 0;
-  }
-  
-  .links a {
+  a {
     display: block;
-    color: #2f2f2f;
     text-decoration: none;
-    margin: 5px 0;
   }
-  
-  .links a:hover {
-    color: #ff69b4;
+  footer {
+    text-align: left;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Tempting', sans-serif;
+    position: absolute;
+    width: 100%;
   }
-  
-  
+
+  footer a:hover {
+    color: #ff0090;
+  }
+  footer2 {
+    text-align: right;
+    color: #fff;
+    font-family: 'Tempting', sans-serif;
+  }
+
+  footer2 a:hover {
+    color: #ff0090;
+  }

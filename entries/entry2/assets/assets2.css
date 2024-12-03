@@ -1,10 +1,13 @@
+@font-face {
+  font-family: 'Tempting';
+  src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY\ copy.ttf);
+}
+
 body {
-    font-family: 'Futura', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    background: url('vintage-paper-texture.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     overflow: hidden; 
@@ -20,9 +23,6 @@ body {
     padding: 10px;
     background-color: #2f2f2f;
     color: #fff;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 3px;
-    font-weight: bold;
     border-bottom: 3px solid #b8860b;
     margin: 0;
   }
@@ -56,23 +56,18 @@ body {
 
   a {
     display: block;
+    text-decoration: none;
   }
-  
-  /* Footer */
   footer {
     text-align: center;
     padding: 10px;
     color: #fff;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Tempting', sans-serif;
     position: absolute;
     bottom: 0;
     width: 100%;
   }
-  
-  footer a {
 
-    text-transform: uppercase;
-  }
   
   footer a:hover {
     color: #ff0090;

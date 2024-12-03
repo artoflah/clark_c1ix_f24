@@ -1,0 +1,102 @@
+@font-face{
+  font-family: 'Brigends Expanded';
+  src: url(fonts/Brigends\ Expanded\ copy.otf);
+  font-family: 'Tempting';
+  src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY\ copy.ttf);
+}
+body {
+  cursor: url('customcursor.png'), auto;
+}
+
+
+h1{
+  font-size: 100px;
+  font-family: 'Brigends Expanded', sans-serif;
+  margin: 5%;
+  line-height: 50%;
+  margin-bottom: 30px;
+
+}
+
+.dragging {
+  opacity: 0.5;
+  border: 2px dashed #000;
+}
+
+h2{
+  font-size: 20px;
+  font-family: 'Tempting', sans-serif;
+  line-height: 0%;
+  margin: 1%;
+}
+.frame-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 175px;
+  row-gap: 0rem;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.shirt-1 {
+  flex-shrink: 0;
+  width: 10.9375rem;
+  height: 9.3125rem;
+  position: relative;
+  object-fit: cover;
+}
+.bodyhidden-1 {
+  flex-shrink: 0;
+  height: 30.0625rem;
+  position: relative;
+  object-fit: cover;
+}
+#bodyhidden {
+  position: sticky;
+  display: block;
+  margin: 0 auto;
+}
+
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ff4cc0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: none;
+  z-index: 10;
+}
+
+.pants-1 {
+  flex-shrink: 0;
+  width: 9.0625rem;
+  height: 15.6875rem;
+  position: relative;
+  object-fit: cover;
+}
+.shoes-1 {
+  flex-shrink: 0;
+  width: 7.0625rem;
+  height: 2.4375rem;
+  position: relative;
+}
+.bag-1 {
+  flex-shrink: 0;
+  width: 2.9375rem;
+  height: 14.5625rem;
+  position: relative;
+}
+a.no-underline {
+  text-decoration: none;
+  color: #ff4cc0;
+}
+footer { 
+  font-family: 'Tempting';
+  text-decoration: none;
+}

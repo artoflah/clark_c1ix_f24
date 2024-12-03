@@ -18,39 +18,39 @@
     <label for="QUESTION3"> WANT</label><br>
     
     <input type="checkbox" id="QUESTION4" name="QUESTION4" class="checkbox">
-    <label for="QUESTION4"> SEE</label><br>
-    
+    <label for="QUESTION4"> TO</label><br>
+
     <input type="checkbox" id="QUESTION5" name="QUESTION5" class="checkbox">
-    <label for="QUESTION5"> WHAT'S</label><br>
+    <label for="QUESTION5"> SEE</label><br>
     
     <input type="checkbox" id="QUESTION6" name="QUESTION6" class="checkbox">
-    <label for="QUESTION6"> NEXT</label><br>
+    <label for="QUESTION6"> WHAT'S</label><br>
     
     <input type="checkbox" id="QUESTION7" name="QUESTION7" class="checkbox">
-    <label for="QUESTION7"> STORE</label><br>
+    <label for="QUESTION7"> AVAILABLE</label><br>
     
     <input type="checkbox" id="QUESTION8" name="QUESTION8" class="checkbox">
-    <label for="QUESTION8"> FOR</label><br>
-    
+    <label for="QUESTION8"> IN</label><br>
+
     <input type="checkbox" id="QUESTION9" name="QUESTION9" class="checkbox">
-    <label for="QUESTION9"> YOU</label><br>
+    <label for="QUESTION9"> STORE</label><br>
   </form>
 
   <div class="image-container">
-    <img src="assets/IMG_8759.JPG" width="500" height="600" alt="OUTFIT ON MONDAY" class="outfit-image">
+    <img src="assets/JANEPOINTELLECARDIGAN_TRUERED_005-245684.png" width="500" height="600" alt="red cardigan image" class="outfit-image">
+    <a href="https://guestinresidence.com/products/jane-pointelle-cardigan-in-cashmere-true-red" alt="link to website for red cardigan"></a>
   </div>
-    
-  <div class="links">
-    <a href="https://www.zara.com/us/en/trf-mid-waist-baggy-balloon-jeans-p1_03607025.html?v1=365453521&utm_source=google&utm_medium=cpc&gad_source=1&gclid=CjwKCAjw0aS3BhA3EiwAKaD2Zby6mg4Pbb86wGZIsNRylkSZ4pC9xTNT7QRchCbgflICxpnDcbEklxoCC-UQAvD_BwE"><em>JEANS FROM ZARA.</em></a>
-    <a href="https://www.urbanoutfitters.com/shop/kimchi-blue-rachel-cardigan?category=sweaters-cardigans-for-women&color=060&type=REGULAR&quantity=1"><em>CARDIGAN FROM URBAN OUTFITTERS.</em></a>
-    <a href="https://www2.hm.com/en_us/productpage.1035207036.html"><em>personally cropped SHIRT FROM H&M.</em></a>
-  </div>
+  <br>
+    <br>
 
-  <p>JEWLERY AND TOTE IS ALL THRIFTED.</p>
   <footer>
-    <a href="/Users/milahclark/Desktop/fall24/interaction/clark_c1ix_f24/index.html">HOME?</a>
-    <a href="/Users/milahclark/Desktop/fall24/interaction/clark_c1ix_f24/entries/entry4/entry4.html">GO NEXT?</a>
+    <a href="/Users/milahclark/Desktop/fall24/interaction/clark_c1ix_f24/index.html">home?</a>
   </footer>
+
+  <footer2>
+    <a href="/Users/milahclark/Desktop/fall24/interaction/clark_c1ix_f24/entries/entry4/entry4.html">let's keep playing!?</a>
+  </footer2> 
+    
 
   <script>
     const checkboxes = document.querySelectorAll('.checkbox');
@@ -68,6 +68,11 @@
     }
     checkboxes.forEach(checkbox => {
       checkbox.addEventListener('change', checkAllChecked);
+      const imageContainer = document.querySelector('.image-container');
+
+  imageContainer.addEventListener('click', () => {
+    window.open('https://guestinresidence.com/products/jane-pointelle-cardigan-in-cashmere-true-red', '_blank');
+  });
     });
   </script>
 </body>
