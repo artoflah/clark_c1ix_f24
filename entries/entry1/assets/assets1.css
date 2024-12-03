@@ -4,23 +4,26 @@
   font-family: 'Tempting';
   src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY\ copy.ttf);
 }
-body {
-  cursor: url('customcursor.png'), auto;
+html {
+  cursor: url('cursor/customcursor.cur'), auto!important;
 }
-
+html.clicked {
+  cursor: url('cursor/customclicker.cur'), pointer;
+}
 
 h1{
   font-size: 100px;
   font-family: 'Brigends Expanded', sans-serif;
   margin: 5%;
   line-height: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
 
 }
 
 .dragging {
   opacity: 0.5;
   border: 2px dashed #000;
+  cursor: url('cursor/customclicker.cur'), auto!important;
 }
 
 h2{
@@ -97,6 +100,7 @@ a.no-underline {
   color: #ff4cc0;
 }
 footer { 
-  font-family: 'Tempting';
+  font-family: 'Tempting', sans-serif;
   text-decoration: none;
+  cursor: url('cursor/customclicker.cur'), auto!important;
 }

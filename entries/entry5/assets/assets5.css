@@ -1,16 +1,27 @@
+@font-face {
+  font-family: 'Tempting';
+  src: url('fonts/Tempting - PERSONAL USE ONLY.ttf');
+}
+html {
+  cursor: url('cursor/customcursor.cur'), auto!important;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'ELEGANT  Personal use', sans-serif;
+  font-family: 'Tempting', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
-  overflow: hidden;
+  min-height: calc(100vh - 50px);
+  overflow-y: auto; 
+  box-sizing: border-box;
 }
 
 .color-block {
   width: 20%;
-  height: 100vh;
+  height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +38,6 @@ body {
 .cream { background-color: #FDF8EC; color: #441C1B; }
 .black-olive { background-color: #2D2F2E; color: #FDF8EC; }
 
-
 .color-block:hover {
   transform: scale(1.1);
 }
@@ -39,5 +49,29 @@ body {
 
 .color-block:focus {
   outline: 3px solid #fff;
+}
+
+footer {
+  font-family: 'Tempting';
+  text-align: center;
+  padding: 10px 0;
+  background-color: #070707; 
+  color: #C0B798;
+  width: 100%;
+  position: fixed; 
+  bottom: 0;
+  cursor: url('cursor/customclicker.cur'), auto!important;
+  z-index: 10; 
+}
+
+a.no-underline {
+  text-decoration: none;
+  color: #C0B798;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+a.no-underline:hover {
+  color: #FDF8EC;
 }
 

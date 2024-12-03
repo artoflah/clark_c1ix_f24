@@ -1,0 +1,113 @@
+@font-face{
+    font-family: 'Brigends Expanded';
+    src: url(fonts/Brigends\ Expanded.otf);
+    font-family: 'Tempting';
+    src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY.ttf);
+  }
+  html {
+    cursor: url('cursor/customcursor.cur'), auto!important;
+  }
+  html.clicked {
+    cursor: url('cursor/customclicker.cur'), pointer;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 60px;
+    font-family: 'Brigends Expanded', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.scene {
+    perspective: 600px;
+}
+
+.cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.front {
+    transform: translateZ(100px);
+    background-image: url('98b0f1d6c8223734bab804edbb286d100b089213.png');
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+    background-image: url('l47179900-1.png');
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-image: url('198c77f2-8f38-44e2-9539-12346ed64673_grande.png');
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+    background-image: url('5e43690b02bb9.png');
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+    background-image: url('necklace2.png');
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-image: url('necklace1.png');
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+a {
+    display: block;
+    text-decoration: none;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Tempting', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  
+  footer a:hover {
+    color: #ff0090;
+    cursor: url('cursor/customclicker.cur'), auto;
+  }

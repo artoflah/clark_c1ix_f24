@@ -4,6 +4,9 @@
     font-family: 'Tempting';
   src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY\ copy.ttf);
 }
+html {
+  cursor: url('cursor/customcursor.cur'), auto!important;
+}
 body {
     font-family: 'Brigends Expanded', sans-serif;
     margin: 0;
@@ -55,6 +58,7 @@ body {
 
   footer a:hover {
     color: #ff0090;
+    cursor: url('cursor/customclicker.cur'), auto;
   }
   footer2 {
     text-align: right;
@@ -64,4 +68,5 @@ body {
 
   footer2 a:hover {
     color: #ff0090;
+    cursor: url('cursor/customclicker.cur'), auto;
   }

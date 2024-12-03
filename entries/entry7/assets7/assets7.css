@@ -1,36 +1,80 @@
+@font-face{
+  font-family: 'Brigends Expanded';
+  src: url(fonts/Brigends\ Expanded.otf);
+  font-family: 'Tempting';
+  src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY.ttf);
+}
+html {
+  cursor: url('cursor/customcursor.cur'), auto!important;
+}
+html.clicked {
+  cursor: url('cursor/customclicker.cur'), pointer;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Brigends Expanded', sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff; 
+  position: fixed; 
+  top: 0;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-  }
-  
-  .necklace-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .necklace {
-    max-width: 50%;
-    max-height: 70%;
-    position: absolute;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .necklace.active {
-    opacity: 1;
-    transform: scale(1);
-    z-index: 10;
-    height:942px 
-  }  
-  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.necklace-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 80%;
+}
+
+.necklace {
+  max-width: 150%;
+  max-height: 150%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+
+footer {
+  text-align: end;
+  margin-top: 20px;
+  font-family: 'Tempting', sans-serif;
+  cursor: url('cursor/customclicker.cur'), auto!important;
+  z-index: 10;
+}
+
+footer a {
+  font-family: 'Tempting', sans-serif;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  cursor: url('cursor/customclicker.cur'), auto!important;
+}
+
+footer a:hover {
+  color: #ff69b4;
+  font-family: 'Tempting', sans-serif;
+  text-decoration: none;
+  cursor: url('cursor/customclicker.cur'), auto!important;
+}

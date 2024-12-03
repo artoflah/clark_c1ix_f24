@@ -2,7 +2,9 @@
   font-family: 'Tempting';
   src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY\ copy.ttf);
 }
-
+html {
+  cursor: url('cursor/customcursor.cur'), auto!important;
+}
 body {
     margin: 0;
     padding: 0;
@@ -71,6 +73,7 @@ body {
   
   footer a:hover {
     color: #ff0090;
+    cursor: url('cursor/customclicker.cur'), auto;
   }
   
  
