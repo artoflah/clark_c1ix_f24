@@ -1,8 +1,8 @@
 @font-face{
   font-family: 'Brigends Expanded';
-  src: url(fonts/Brigends\ Expanded\ copy.otf);
+  src: url(fonts/Brigends\ Expanded.otf);
   font-family: 'Tempting';
-  src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY\ copy.ttf);
+  src: url(fonts/Tempting\ -\ PERSONAL\ USE\ ONLY.ttf);
 }
 html {
   cursor: url('cursor/customcursor.cur'), auto!important;
