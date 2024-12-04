@@ -28,7 +28,7 @@ h1{
 
 h2{
   font-size: 20px;
-  font-family: 'Tempting', sans-serif;
+  font-family: 'Tempting', cursive;
   line-height: 0%;
   margin: 1%;
 }
@@ -100,7 +100,7 @@ a.no-underline {
   color: #ff4cc0;
 }
 footer { 
-  font-family: 'Tempting', sans-serif;
+  font-family: 'Tempting', cursive;
   text-decoration: none;
   cursor: url('cursor/customclicker.cur'), auto!important;
 }
